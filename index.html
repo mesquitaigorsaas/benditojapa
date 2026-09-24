@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bendito Japa Buritis | Rodízio Japonês Premium em BH</title>
+<meta name="description" content="Bendito Japa Buritis — rodízio japonês premium sem restrição de quantidade e sem limite de cortes de sashimi. Cardápio completo, à la carte, combinados e reservas pelo WhatsApp. Av. Prof. Mário Werneck, 1550 — Buritis, BH.">
+<meta property="og:title" content="Bendito Japa Buritis | O queridinho de BH">
+<meta property="og:description" content="Rodízio japonês premium no Buritis. Nota 4,8 no Google. Reserve pelo WhatsApp.">
+<meta property="og:image" content="img/hero-barca.png">
+<meta name="theme-color" content="#0a0907">
+<link rel="icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Montserrat:wght@300;400;500;600;700&family=Kaushan+Script&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0907; --bg-2:#12100c; --bg-3:#1a1712; --card:#15130f;
+  --gold:#d9b25c; --gold-2:#f2dc8d; --gold-3:#a8782c;
+  --grad:linear-gradient(120deg,#a8782c 0%,#e9c872 35%,#f6e39c 50%,#d4a94c 70%,#a8782c 100%);
+  --text:#ece6da; --muted:#a39a89; --line:rgba(217,178,92,.18);
+  --red:#b3261e; --radius:18px; --max:1200px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{font-family:"Montserrat",system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit}
+.wrap{width:min(var(--max),100% - 32px);margin-inline:auto}
+section{padding:110px 0;position:relative}
+h1,h2,h3{font-family:"Shippori Mincho",Georgia,serif;font-weight:700;line-height:1.1;color:#fff}
+h2{font-size:clamp(2rem,4.4vw,3.2rem);margin:14px 0 16px}
+.gold{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.script{font-family:"Kaushan Script",cursive;font-weight:400}
+.eyebrow{display:inline-flex;align-items:center;gap:12px;font-size:.74rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);font-weight:600}
+.eyebrow::before,.eyebrow.both::after{content:"";width:34px;height:1px;background:linear-gradient(90deg,transparent,var(--gold))}
+.eyebrow.both::after{background:linear-gradient(90deg,var(--gold),transparent)}
+.lead{color:var(--muted);font-size:1.05rem;max-width:640px}
+.center{text-align:center}.center .lead{margin-inline:auto}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 28px;border-radius:999px;font-weight:600;font-size:.95rem;letter-spacing:.02em;transition:.25s;border:1px solid transparent;cursor:pointer}
+.btn svg{width:19px;height:19px;flex:none}
+.btn-gold{background:var(--grad);background-size:200% 100%;color:#1a1305;box-shadow:0 12px 34px -12px rgba(217,178,92,.7)}
+.btn-gold:hover{background-position:100% 0;transform:translateY(-2px)}
+.btn-line{border-color:rgba(217,178,92,.5);color:var(--gold-2)}
+.btn-line:hover{background:rgba(217,178,92,.1);border-color:var(--gold)}
+
+/* Header */
+header{position:fixed;inset:0 0 auto;z-index:50;transition:.3s}
+header.scrolled,header.menu-on{background:rgba(10,9,7,.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:96px;transition:height .3s}
+header.scrolled .nav{height:74px}
+.brand img{height:84px;width:84px;border-radius:50%;box-shadow:0 8px 24px -6px rgba(0,0,0,.7);transition:.3s}
+header.scrolled .brand img{height:60px;width:60px}
+.menu{display:flex;gap:28px;font-size:.88rem;font-weight:500}
+.menu a{opacity:.85;transition:.2s;position:relative}
+.menu a:hover{opacity:1;color:var(--gold-2)}
+.nav .btn{padding:11px 22px;font-size:.86rem}
+.burger{display:none;background:none;border:0;cursor:pointer;color:var(--gold-2)}
+.burger svg{width:30px;height:30px}
+.burger path{transition:.3s;transform-origin:12px 12px}
+.burger.open .l1{transform:translateY(5px) rotate(45deg)}.burger.open .l2{opacity:0}.burger.open .l3{transform:translateY(-5px) rotate(-45deg)}
+
+/* Hero */
+.hero{min-height:100svh;display:grid;grid-template-columns:minmax(0,1fr);align-items:center;padding:130px 0 70px;overflow:hidden;
+  background:radial-gradient(ellipse at 72% 55%,rgba(217,178,92,.18),transparent 55%),var(--bg)}
+.hero::before{content:"";position:absolute;inset:0;background:url(img/textura.jpg) center/cover;opacity:.55;mix-blend-mode:screen;
+  -webkit-mask-image:linear-gradient(180deg,#000 0%,transparent 45%,transparent 70%,#000 100%);mask-image:linear-gradient(180deg,#000 0%,transparent 45%,transparent 70%,#000 100%)}
+.hero-grid{position:relative;display:grid;grid-template-columns:1fr 1.05fr;gap:30px;align-items:center}
+.hero-grid>*{min-width:0}
+.badge{display:inline-flex;align-items:center;gap:14px;margin-bottom:22px}
+.seal{width:100px;height:100px;display:grid;place-items:center;text-align:center;background:url(img/selo.png) center/contain no-repeat;color:#241a06;font-weight:800;font-size:.5rem;line-height:1.2;letter-spacing:.04em;filter:drop-shadow(0 8px 18px rgba(0,0,0,.6));animation:spin 30s linear infinite}
+.seal span{display:block;font-size:.92rem;letter-spacing:.02em}
+@keyframes spin{0%,100%{transform:rotate(-6deg)}50%{transform:rotate(6deg)}}
+.rating{display:flex;flex-direction:column}
+.rating b{font-size:1.5rem;font-family:"Shippori Mincho",serif;color:#fff;line-height:1}
+.rating .stars{color:#f4c542;letter-spacing:2px;font-size:.95rem}
+.rating small{color:var(--muted);font-size:.78rem}
+.hero h1{font-size:clamp(2.6rem,5.8vw,4.7rem);font-weight:800;letter-spacing:-.01em}
+.hero h1 .script{display:block;font-size:.92em;margin-top:6px}
+.hero p{font-size:1.1rem;color:#cfc6b5;max-width:520px;margin-top:22px}
+.prices{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+.price-chip{border:1px solid var(--line);background:rgba(255,255,255,.03);border-radius:16px;padding:12px 18px}
+.price-chip small{display:block;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.price-chip b{font-family:"Shippori Mincho",serif;font-size:1.55rem;color:var(--gold-2)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+.hero-img{position:relative}
+.hero-img::before{content:"";position:absolute;inset:10% 5% 5%;background:radial-gradient(circle,rgba(233,200,114,.35),transparent 65%);filter:blur(30px)}
+.hero-img img{position:relative;width:118%;max-width:none;margin-left:-6%;filter:drop-shadow(0 40px 50px rgba(0,0,0,.8));animation:float 8s ease-in-out infinite}
+@keyframes float{50%{translate:0 -14px}}
+.kanji{position:absolute;right:-10px;top:4%;font-family:"Shippori Mincho",serif;font-size:9rem;font-weight:800;color:rgba(217,178,92,.06);writing-mode:vertical-rl;pointer-events:none;line-height:1}
+
+/* Strip */
+.strip{border-block:1px solid var(--line);background:var(--bg-2);padding:26px 0}
+.strip-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.strip-item{display:flex;align-items:center;gap:14px}
+.strip-item .ic{width:46px;height:46px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;color:var(--gold);flex:none}
+.strip-item .ic svg{width:22px;height:22px}
+.strip-item b{display:block;color:#fff;font-size:.95rem}
+.strip-item span{font-size:.8rem;color:var(--muted)}
+
+/* Rodízio preços */
+.rod-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:50px}
+.rod-card{position:relative;border-radius:24px;padding:40px;overflow:hidden;background:linear-gradient(160deg,#1c1812,#0f0d0a);border:1px solid var(--line)}
+.rod-card::after{content:"";position:absolute;inset:0;border-radius:24px;padding:1px;background:linear-gradient(140deg,rgba(242,220,141,.6),transparent 40%,transparent 60%,rgba(168,120,44,.5));-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
+.rod-card .tag{font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);font-weight:600}
+.rod-card h3{font-size:2.2rem;margin:8px 0 6px}
+.rod-card .when{color:#cfc6b5}
+.rod-card .val{display:flex;align-items:baseline;gap:8px;margin:26px 0 8px}
+.rod-card .val small{color:var(--muted);font-size:.9rem}
+.rod-card .val b{font-family:"Shippori Mincho",serif;font-size:3.4rem;line-height:1}
+.rod-card p.sub{font-size:.88rem;color:var(--muted)}
+.rod-card .ico{position:absolute;right:28px;top:28px;width:52px;height:52px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;color:var(--gold)}.rod-card .ico svg{width:26px;height:26px}
+.rules{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:24px}
+.rule{padding:18px 18px 18px 20px;border-left:2px solid var(--gold)!important;border-radius:16px;background:var(--bg-2);border:1px solid var(--line);font-size:.86rem;color:#cfc6b5}
+.rule b{display:block;color:var(--gold-2);font-size:.95rem;margin-bottom:2px}
+
+/* Cardápio rodízio */
+.menu-sec{background:linear-gradient(180deg,var(--bg) 0%,var(--bg-2) 100%)}
+.tabs{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin:40px 0 34px}
+.tab{padding:11px 20px;border-radius:999px;border:1px solid var(--line);background:transparent;cursor:pointer;font-size:.86rem;font-weight:500;color:#cfc6b5;transition:.2s}
+.tab:hover{border-color:var(--gold);color:#fff}
+.tab.active{background:var(--grad);color:#1a1305;border-color:transparent;font-weight:600}
+.dish-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.dish{background:var(--card);border:1px solid rgba(255,255,255,.05);border-radius:var(--radius);overflow:hidden;transition:.35s;animation:fadeUp .5s both}
+.dish:hover{transform:translateY(-5px);border-color:var(--line);box-shadow:0 20px 40px -20px rgba(0,0,0,.8)}
+.dish figure{aspect-ratio:16/9;overflow:hidden;background:#000}
+.dish img{width:100%;height:100%;object-fit:cover;transition:.6s}
+.dish:hover img{transform:scale(1.06)}
+.dish .body{padding:16px 18px 18px}
+.dish h4{font-family:"Shippori Mincho",serif;font-size:1.12rem;color:#fff;font-weight:700}
+.dish p{font-size:.84rem;color:var(--muted);margin-top:4px}
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}}
+.menu-note{margin-top:30px;text-align:center;font-size:.85rem;color:var(--muted)}
+
+/* À la carte */
+.carte-layout{display:grid;grid-template-columns:260px 1fr;gap:40px;margin-top:50px;align-items:start}
+.carte-nav{position:sticky;top:100px;display:flex;flex-direction:column;gap:4px;border-left:1px solid var(--line);padding-left:6px}
+.carte-nav button{text-align:left;background:none;border:0;padding:10px 16px;border-radius:10px;cursor:pointer;color:#cfc6b5;font-size:.92rem;transition:.2s}
+.carte-nav button:hover{color:#fff;background:rgba(255,255,255,.03)}
+.carte-nav button.active{color:var(--gold-2);background:rgba(217,178,92,.08);font-weight:600}
+.carte-panel{display:none;animation:fadeUp .45s both}
+.carte-panel.active{display:grid;grid-template-columns:1fr 280px;gap:36px;align-items:start}
+.carte-panel.noimg.active{grid-template-columns:1fr}
+.carte-panel h3{font-family:"Kaushan Script",cursive;font-weight:400;font-size:2.7rem;margin-bottom:6px}
+.carte-panel .ph{font-size:.85rem;color:var(--muted);margin-bottom:22px}
+.items{display:grid;gap:4px}
+.items.two{grid-template-columns:1fr 1fr;column-gap:36px}
+.item{padding:13px 0;border-bottom:1px dashed rgba(217,178,92,.16)}
+.item .row{display:flex;align-items:baseline;gap:10px}
+.item .name{font-weight:600;color:#fff;font-size:.98rem}
+.item .qty{font-size:.74rem;color:var(--gold);border:1px solid var(--line);border-radius:99px;padding:1px 8px;white-space:nowrap}
+.item .dots{flex:1;border-bottom:1px dotted rgba(255,255,255,.18);transform:translateY(-4px);min-width:20px}
+.item .price{font-family:"Shippori Mincho",serif;font-weight:700;color:var(--gold-2);white-space:nowrap}
+.item .desc{font-size:.82rem;color:var(--muted);margin-top:3px}
+.carte-panel .side{position:sticky;top:110px}
+.carte-panel .side img{width:100%;filter:drop-shadow(0 30px 40px rgba(0,0,0,.7))}
+.carte-panel .side img.rounded{border-radius:18px;aspect-ratio:3/4;object-fit:cover}
+.sub-h{font-size:.74rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);font-weight:600;margin:26px 0 4px}
+.sub-h:first-child{margin-top:0}
+
+/* Combinados */
+.combos{background:var(--bg-2);overflow:hidden}
+.combo-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:50px}
+.combo-grid.three{grid-template-columns:repeat(3,1fr);margin-top:30px}
+.combo{position:relative;border-radius:20px;padding:28px 24px;background:var(--card);border:1px solid rgba(255,255,255,.06);transition:.3s;display:flex;flex-direction:column}
+.combo:hover{border-color:var(--line);transform:translateY(-4px)}
+.combo .who{font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);font-weight:600}
+.combo h4{font-family:"Shippori Mincho",serif;font-size:1.5rem;color:#fff;margin:6px 0 2px}
+.combo .pcs{font-size:.82rem;color:var(--muted)}
+.combo .val{font-family:"Shippori Mincho",serif;font-size:2rem;margin:14px 0}
+.combo ul{list-style:none;display:grid;gap:5px;font-size:.86rem;color:#cfc6b5;margin-bottom:6px}
+.combo li{display:flex;gap:8px}
+.combo li::before{content:"✦";color:var(--gold);font-size:.62rem;margin-top:5px}
+.combo-sub{margin:60px 0 0;display:flex;align-items:center;gap:18px}
+.combo-sub h3{font-family:"Kaushan Script",cursive;font-weight:400;font-size:2.4rem}
+.combo-sub::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--line),transparent)}
+.premium{grid-column:1/-1;display:grid!important;grid-template-columns:1.1fr .9fr;align-items:center;gap:20px;padding:36px 40px;overflow:hidden;background:radial-gradient(circle at 85% 0%,rgba(233,200,114,.18),transparent 55%),linear-gradient(160deg,#211b12,#110e0a);border:1px solid rgba(217,178,92,.45)}
+.premium .flag{z-index:3;position:absolute;top:18px;right:18px;background:var(--grad);color:#1a1305;font-size:.7rem;font-weight:700;letter-spacing:.14em;padding:5px 12px;border-radius:99px}
+.premium ul{grid-template-columns:1fr 1fr;column-gap:20px}
+.premium .pimg{align-self:stretch;margin:-36px -40px -36px 0;position:relative;min-height:340px}
+.premium .pimg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 35%;-webkit-mask-image:linear-gradient(90deg,transparent,#000 35%);mask-image:linear-gradient(90deg,transparent,#000 35%)}
+
+/* Ambiente / galeria */
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:260px;gap:14px;margin-top:46px}
+.gallery a{border-radius:18px;overflow:hidden;position:relative}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:.6s}
+.gallery a:hover img{transform:scale(1.06)}
+.gallery .t2{grid-row:span 2}
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}
+.quote{padding:26px;border-radius:18px;border:1px solid var(--line);background:var(--bg-2)}
+.quote .stars{color:#f4c542;letter-spacing:2px}
+.quote p{font-family:"Shippori Mincho",serif;font-size:1.08rem;color:#fff;margin:10px 0}
+.quote small{color:var(--muted);font-size:.8rem}
+
+/* Ocasiões */
+.occ-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px}
+.occ{position:relative;border-radius:20px;overflow:hidden;min-height:360px;display:flex;align-items:flex-end;isolation:isolate}
+.occ img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:.6s}
+.occ::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(10,9,7,.96) 15%,rgba(10,9,7,.35) 60%,transparent)}
+.occ:hover img{transform:scale(1.05)}
+.occ .body{padding:26px}
+.occ h3{font-size:1.5rem}
+.occ p{font-size:.88rem;color:#cfc6b5;margin:6px 0 14px}
+.occ .lnk{font-size:.86rem;color:var(--gold-2);font-weight:600;display:inline-flex;gap:8px;align-items:center}
+
+/* Contato */
+.contact-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:34px;margin-top:44px}
+.info{display:grid;gap:12px;align-content:start}
+.info .it{display:flex;gap:16px;align-items:flex-start;padding:18px 20px;border:1px solid var(--line);border-radius:16px;background:var(--bg-2);transition:.25s}
+.info a.it:hover{border-color:var(--gold);background:rgba(217,178,92,.06)}
+.info .ic{width:46px;height:46px;border-radius:12px;background:rgba(217,178,92,.1);color:var(--gold);display:grid;place-items:center;flex:none}
+.info .ic svg{width:21px;height:21px}
+.info b{display:block;color:#fff;font-weight:600}
+.info span{font-size:.88rem;color:var(--muted)}
+.hours{display:grid;grid-template-columns:auto 1fr;gap:2px 14px;font-size:.88rem;color:var(--muted);margin-top:4px}
+.hours dt{color:#cfc6b5}
+.map{border-radius:20px;overflow:hidden;min-height:460px;background:#fff}
+.map iframe{width:100%;height:100%;min-height:460px;border:0;display:block}
+.other{margin-top:14px;font-size:.84rem;color:var(--muted);padding:16px 20px;border-radius:14px;border:1px dashed var(--line)}
+.other b{color:#cfc6b5}
+
+/* CTA final */
+.final{text-align:center;padding:120px 0;overflow:hidden;background:radial-gradient(ellipse at 50% 100%,rgba(217,178,92,.2),transparent 60%),var(--bg)}
+.final::before{content:"";position:absolute;inset:0;background:url(img/textura.jpg) center/cover;opacity:.35;mix-blend-mode:screen}
+.final .wrap{position:relative}
+.final img.logo{width:220px;margin:0 auto 20px}
+.final h2{font-size:clamp(2.2rem,5vw,3.8rem)}
+.final .hero-cta{justify-content:center}
+
+footer{padding:46px 0 30px;border-top:1px solid var(--line);font-size:.86rem;color:var(--muted);background:#070605}
+.foot{display:flex;justify-content:space-between;align-items:center;gap:30px;flex-wrap:wrap}
+.foot img{height:88px;width:88px}
+.socials{display:flex;gap:10px}
+.socials a{width:42px;height:42px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;color:var(--gold);transition:.2s}
+.socials a:hover{background:var(--gold);color:#1a1305}
+.socials svg{width:18px;height:18px}
+.credit{margin-top:28px;padding-top:18px;border-top:1px solid var(--line);text-align:center;font-size:.8rem;letter-spacing:.04em}
+.credit b{color:var(--gold-2);font-weight:600}
+.credit a:hover b{text-decoration:underline}
+
+.wa-float{position:fixed;right:20px;bottom:20px;z-index:60;width:62px;height:62px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 12px 30px -6px rgba(37,211,102,.6);animation:pulse 2.6s infinite}
+.wa-float svg{width:32px;height:32px;color:#fff}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.55)}70%{box-shadow:0 0 0 18px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+.to-top{position:fixed;right:27px;bottom:96px;z-index:60;width:48px;height:48px;border-radius:50%;border:1px solid rgba(217,178,92,.5);background:rgba(10,9,7,.88);backdrop-filter:blur(10px);color:var(--gold-2);display:grid;place-items:center;cursor:pointer;opacity:0;visibility:hidden;transform:translateY(12px);transition:.3s}
+.to-top.show{opacity:1;visibility:visible;transform:none}
+.to-top:hover{background:var(--gold);color:#1a1305}
+.to-top svg{width:22px;height:22px}
+
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+
+/* Responsivo */
+@media (max-width:1080px){
+  .combo-grid,.combo-grid.three{grid-template-columns:repeat(2,1fr)}
+  .rules{grid-template-columns:repeat(2,1fr)}
+  .carte-layout{grid-template-columns:1fr}
+  .carte-nav{position:static;flex-direction:row;overflow-x:auto;border-left:0;padding:0 0 6px;gap:8px;scrollbar-width:none}
+  .carte-nav::-webkit-scrollbar{display:none}
+  .carte-nav button{white-space:nowrap;border:1px solid var(--line);border-radius:99px;padding:9px 16px}
+  .carte-panel.active{grid-template-columns:1fr}
+  .carte-panel .side{display:none}
+}
+@media (max-width:900px){
+  .menu,.nav .btn{display:none}
+  .burger{display:block}
+  .menu.open{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--bg);padding:24px 16px 30px;gap:18px;border-bottom:1px solid var(--line);font-size:1.05rem}
+  .hero-grid,.contact-grid{grid-template-columns:1fr}
+  .hero{padding-top:120px}
+  .hero-img{order:-1;max-width:520px;margin:0 auto}
+  .hero-img img{width:100%;margin:0}
+  .strip-grid{grid-template-columns:1fr 1fr}
+  .rod-grid{grid-template-columns:1fr}
+  .dish-grid{grid-template-columns:1fr 1fr}
+  .gallery{grid-template-columns:repeat(2,1fr);grid-auto-rows:220px}
+  .quotes,.occ-grid{grid-template-columns:1fr}
+  .premium{grid-template-columns:1fr!important;padding:28px 24px}.premium .pimg{margin:14px -24px -28px;min-height:260px}.premium .pimg img{-webkit-mask-image:linear-gradient(180deg,transparent,#000 35%);mask-image:linear-gradient(180deg,transparent,#000 35%)}
+}
+@media (max-width:640px){
+  section{padding:80px 0}
+  .nav{height:84px}.brand img{height:64px;width:64px}header.scrolled .brand img{height:50px;width:50px}
+  .items.two{grid-template-columns:1fr}
+  .dish-grid{grid-template-columns:1fr 1fr;gap:12px}
+  .dish .body{padding:11px 12px 13px}.dish h4{font-size:.95rem}.dish p{font-size:.74rem;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+  .tabs{flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;margin-inline:-16px;padding:0 16px 6px;scrollbar-width:none}.tabs::-webkit-scrollbar{display:none}.tab{white-space:nowrap}
+  .combo-grid,.combo-grid.three{grid-template-columns:1fr}
+  .premium{grid-column:auto}.premium ul{grid-template-columns:1fr}
+  .rules{grid-template-columns:1fr}
+  .rod-card{padding:30px 24px}.rod-card .val b{font-size:2.8rem}
+  .strip-grid{gap:16px}
+  .hero-cta .btn{flex:1 1 100%}
+  .to-top{right:23px;bottom:90px;width:44px;height:44px}
+  .wa-float{right:16px;bottom:16px;width:58px;height:58px}
+  .kanji{display:none}
+  footer{padding-bottom:96px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#inicio" class="brand" aria-label="Bendito Japa — início"><img src="img/logo-redondo.png" alt="Bendito Japa Restaurante Japonês"></a>
+    <nav class="menu" id="menu">
+      <a href="#rodizio">Rodízio</a>
+      <a href="#cardapio">Cardápio</a>
+      <a href="#a-la-carte">À la carte</a>
+      <a href="#combinados">Combinados</a>
+      <a href="#ambiente">Ambiente</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <a class="btn btn-gold" href="https://wa.me/5531993614146?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20reservar%20uma%20mesa%20no%20Bendito%20Japa%20Buritis." target="_blank" rel="noopener">Reservar mesa</a>
+    <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path class="l1" d="M4 7h16"/><path class="l2" d="M4 12h16"/><path class="l3" d="M4 17h16"/></svg></button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <span class="kanji" aria-hidden="true">寿司</span>
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <div class="badge">
+        <div class="seal"><div>O QUERIDINHO<span>DE BH</span></div></div>
+        <div class="rating"><b>4,8 <span class="stars">★★★★★</span></b><small>+1.800 avaliações no Google</small></div>
+      </div>
+      <span class="eyebrow">Buritis · Belo Horizonte</span>
+      <h1>Rodízio japonês <span class="script gold">premium</span></h1>
+      <p>Sem restrição de quantidade e sem limite de cortes de sashimi. Comida oriental de alto nível, feita na hora, num ambiente pensado para uma verdadeira imersão na cultura japonesa.</p>
+      <div class="prices">
+        <div class="price-chip"><small>Almoço · seg a sex</small><b>R$ 105</b></div>
+        <div class="price-chip"><small>Jantar e fim de semana</small><b>R$ 145</b></div>
+      </div>
+      <div class="hero-cta">
+        <a class="btn btn-gold" href="https://wa.me/5531993614146?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20reservar%20uma%20mesa%20no%20Bendito%20Japa%20Buritis." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.5 12.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5 2.5 1 3 .8 3.6.8.6-.1 1.8-.7 2-1.5.3-.7.3-1.3.2-1.5-.1-.1-.3-.2-.6-.3z"/></svg>
+          Reservar pelo WhatsApp</a>
+        <a class="btn btn-line" href="#cardapio">Ver cardápio</a>
+      </div>
+    </div>
+    <div class="hero-img reveal"><img src="img/hero-barca.png" alt="Barca do Bendito Japa com dragão dourado, sushis, sashimis e jous"></div>
+  </div>
+</section>
+
+<div class="strip">
+  <div class="wrap strip-grid">
+    <div class="strip-item"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12h16M12 4v16"/><circle cx="12" cy="12" r="9"/></svg></span><div><b>Sem limite</b><span>de quantidade e cortes</span></div></div>
+    <div class="strip-item"><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 9.3l-5.5 4.7L18.2 21 12 17.3 5.8 21l1.7-7L2 9.3l7.1-.4z"/></svg></span><div><b>4,8 no Google</b><span>mais de 1.800 avaliações</span></div></div>
+    <div class="strip-item"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11h18l-2 8H5z"/><path d="M7 11V7m5 4V5m5 6V8"/></svg></span><div><b>+35 itens no rodízio</b><span>frios, quentes e sobremesa</span></div></div>
+    <div class="strip-item"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="7" width="13" height="10" rx="2"/><path d="M15 10h4l3 3v4h-7"/><circle cx="7" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></svg></span><div><b>Delivery</b><span>pelo iFood</span></div></div>
+  </div>
+</div>
+
+<!-- RODÍZIO -->
+<section id="rodizio">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow both">Rodízio Premium</span>
+      <h2>Tudo à vontade. <span class="gold">Do jeito certo.</span></h2>
+      <p class="lead">Rodízio premium completo, sem restrição de quantidade e sem limitação de cortes de sashimi. Começa com uma entrada de cortesia e termina com sobremesa por nossa conta.</p>
+    </div>
+    <div class="rod-grid">
+      <div class="rod-card reveal">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg></span>
+        <span class="tag">Almoço</span>
+        <h3>Segunda a sexta</h3>
+        <div class="when">das 11h30 às 15h</div>
+        <div class="val"><small>R$</small><b class="gold">105,00</b><small>por pessoa</small></div>
+        <p class="sub">Exceto feriados.</p>
+      </div>
+      <div class="rod-card reveal">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg></span>
+        <span class="tag">Jantar · fins de semana · feriados</span>
+        <h3>Todos os dias</h3>
+        <div class="when">Seg a sex, das 18h30 às 23h · Sáb, dom e feriados, das 12h às 23h</div>
+        <div class="val"><small>R$</small><b class="gold">145,00</b><small>por pessoa</small></div>
+        <p class="sub">Rodízio premium completo, sem limitação de cortes.</p>
+      </div>
+    </div>
+    <div class="rules reveal">
+      <div class="rule"><b>Crianças</b>Até 5 anos não pagam. De 6 a 10 anos, R$ 79,90.</div>
+      <div class="rule"><b>Pagamento</b>Dinheiro, débito, crédito e VR.</div>
+      <div class="rule"><b>Sobremesa cortesia</b>1 por rodízio: creme, chocolate, açaí ou açaí com leite Ninho.</div>
+      <div class="rule"><b>Importante</b>Bebidas e demais sobremesas à parte. Cobramos taxa de desperdício.</div>
+    </div>
+  </div>
+</section>
+
+<!-- CARDÁPIO RODÍZIO -->
+<section class="menu-sec" id="cardapio">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow both">Cardápio do rodízio</span>
+      <h2>O que vem <span class="script gold">à mesa</span></h2>
+      <p class="lead">Tudo isso está incluso no rodízio premium. Escolha uma categoria e bom apetite — ou melhor, <em>itadakimasu!</em></p>
+    </div>
+    <div class="tabs" id="dishTabs" role="tablist"></div>
+    <div class="dish-grid" id="dishGrid"></div>
+    <p class="menu-note">*Fotos ilustrativas. Itens sujeitos à disponibilidade do dia.</p>
+  </div>
+</section>
+
+<!-- À LA CARTE -->
+<section id="a-la-carte">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">À la carte</span>
+      <h2>Prefere escolher <span class="gold">prato a prato?</span></h2>
+      <p class="lead">Nosso cardápio à la carte completo, com preços atualizados.</p>
+    </div>
+
+    <div class="carte-layout">
+      <nav class="carte-nav" id="carteNav" aria-label="Categorias à la carte">
+        <button class="active" data-p="sashimi">Sashimis</button>
+        <button data-p="sushi">Sushis</button>
+        <button data-p="jhou">Jhou's</button>
+        <button data-p="temaki">Temakis</button>
+        <button data-p="maki">Hossomaki &amp; Uramaki</button>
+        <button data-p="quentes">Pratos quentes</button>
+        <button data-p="frios">Pratos frios</button>
+        <button data-p="yakissoba">Yakissoba &amp; Teppanyaki</button>
+        <button data-p="burger">Sushi Burger &amp; Acomp.</button>
+        <button data-p="sobremesas">Sobremesas</button>
+      </nav>
+
+      <div>
+        <!-- Sashimi -->
+        <div class="carte-panel active" id="p-sashimi">
+          <div>
+            <h3 class="gold">Sashimi</h3>
+            <p class="ph">Cortes frescos, preparados na hora.</p>
+            <div class="items">
+              <div class="item"><div class="row"><span class="name">Sashimi de Atum</span><span class="qty">16 und.</span><span class="dots"></span><span class="price">90,00</span></div></div>
+              <div class="item"><div class="row"><span class="name">Sashimi Especial</span><span class="qty">25 und.</span><span class="dots"></span><span class="price">99,90</span></div><div class="desc">Atum, salmão, peixe branco, kani e polvo</div></div>
+              <div class="item"><div class="row"><span class="name">Sashimi de Kani</span><span class="qty">16 und.</span><span class="dots"></span><span class="price">70,00</span></div></div>
+              <div class="item"><div class="row"><span class="name">Sashimi Misto</span><span class="qty">20 und.</span><span class="dots"></span><span class="price">109,90</span></div><div class="desc">Atum, salmão e peixe branco</div></div>
+              <div class="item"><div class="row"><span class="name">Sashimi de Peixe Branco</span><span class="qty">16 und.</span><span class="dots"></span><span class="price">89,00</span></div></div>
+              <div class="item"><div class="row"><span class="name">Sashimi de Polvo</span><span class="qty">16 und.</span><span class="dots"></span><span class="price">89,90</span></div></div>
+              <div class="item"><div class="row"><span class="name">Sashimi de Salmão</span><span class="qty">16 und.</span><span class="dots"></span><span class="price">109,90</span></div></div>
+              <div class="item"><div class="row"><span class="name">Sashimi de Tilápia</span><span class="qty">16 und.</span><span class="dots"></span><span class="price">70,00</span></div></div>
+            </div>
+          </div>
+          <div class="side"><img class="rounded" src="img/ig07.jpg" alt="Barca de sashimis" style="aspect-ratio:4/5" loading="lazy"></div>
+        </div>
+
+        <!-- Sushi -->
+        <div class="carte-panel" id="p-sushi">
+          <div>
+            <h3 class="gold">Sushi</h3>
+            <p class="ph">Combinações da casa e sushis de 8 unidades.</p>
+            <div class="items">
+              <div class="item"><div class="row"><span class="name">Sushi Especial</span><span class="qty">20 und.</span><span class="dots"></span><span class="price">139,90</span></div><div class="desc">10 sushis variados, 4 uramakis salmão, 2 uramakis skin, 2 jhou's ovas e 1 jhou salmão</div></div>
+              <div class="item"><div class="row"><span class="name">Sushi Salmão</span><span class="qty">16 und.</span><span class="dots"></span><span class="price">119,90</span></div><div class="desc">8 sushis salmão, 4 uramakis salmão e 4 jhou's salmão</div></div>
+              <div class="item"><div class="row"><span class="name">Sushi Simples</span><span class="qty">16 und.</span><span class="dots"></span><span class="price">99,90</span></div><div class="desc">8 sushis, 4 uramakis salmão, 2 uramakis skin e 2 jhou's salmão</div></div>
+              <div class="item"><div class="row"><span class="name">Sushi Salmão Baterá</span><span class="qty">8 und.</span><span class="dots"></span><span class="price">99,90</span></div></div>
+              <div class="item"><div class="row"><span class="name">Sushi Jhou</span><span class="qty">8 und.</span><span class="dots"></span><span class="price">99,90</span></div><div class="desc">Sushi de salmão picadinho com cebolinha e maionese</div></div>
+              <div class="item"><div class="row"><span class="name">Jhou Light</span><span class="qty">8 und.</span><span class="dots"></span><span class="price">99,90</span></div><div class="desc">Bolinho de arroz e pepino recheado com salmão picadinho com cebolinha e maionese</div></div>
+            </div>
+            <p class="sub-h" style="margin-top:30px">Sushi · 8 unidades</p>
+            <div class="items two">
+              <div class="item"><div class="row"><span class="name">Atum</span><span class="dots"></span><span class="price">69,00</span></div></div>
+              <div class="item"><div class="row"><span class="name">Polvo</span><span class="dots"></span><span class="price">89,00</span></div></div>
+              <div class="item"><div class="row"><span class="name">Camarão</span><span class="dots"></span><span class="price">89,00</span></div></div>
+              <div class="item"><div class="row"><span class="name">Salmão</span><span class="dots"></span><span class="price">96,00</span></div></div>
+              <div class="item"><div class="row"><span class="name">Kani</span><span class="dots"></span><span class="price">72,00</span></div></div>
+              <div class="item"><div class="row"><span class="name">Skin</span><span class="dots"></span><span class="price">72,00</span></div></div>
+              <div class="item"><div class="row"><span class="name">Peixe Prego</span><span class="dots"></span><span class="price">79,00</span></div></div>
+            </div>
+          </div>
+          <div class="side"><img src="img/sushi-hashi.png" alt="Sushi no hashi" loading="lazy"></div>
+        </div>
+
+        <!-- Jhou -->
+        <div class="carte-panel" id="p-jhou">
+          <div>
+            <h3 class="gold">Jhou's</h3>
+            <p class="ph">O queridinho da casa, em oito versões.</p>
+            <div class="items two">
+              <div class="item"><div class="row"><span class="name">Jhou Camarão</span><span class="dots"></span><span class="price">96,00</span></div></div>
+              <div class="item"><div class="row"><span class="name">Jhou Geleia</span><span class="dots"></span><span class="price">88,00</span></div></div>
+              <div class="item"><div class="row"><span class="name">Jhou Couve</span><span class="dots"></span><span class="price">88,00</span></div></div>
+              <div class="item"><div class="row"><span class="name">Jhou Light</span><span class="dots"></span><span class="price">98,00</span></div></div>
+              <div class="item"><div class="row"><span class="name">Jhou Cream Cheese</span><span class="dots"></span><span class="price">96,00</span></div></div>
+              <div class="item"><div class="row"><span class="name">Jhou Ovas</span><span class="dots"></span><span class="price">108,00</span></div></div>
+              <div class="item"><div class="row"><span class="name">Jhou Doritos</span><span class="dots"></span><span class="price">88,00</span></div></div>
+              <div class="item"><div class="row"><span class="name">Jhou Salmão</span><span class="dots"></span><span class="price">129,00</span></div></div>
+            </div>
+          </div>
+          <div class="side"><img class="rounded" src="img/jou.jpg" alt="Jhou's variados" loading="lazy"></div>
+        </div>
+
+        <!-- Temaki -->
+        <div class="carte-panel" id="p-temaki">
+          <div>
+            <h3 class="gold">Temakis</h3>
+            <p class="ph">Cones de alga crocante com recheio generoso.</p>
+            <div class="items two">
+              <div class="item"><div class="row"><span class="name">Atum</span><span class="dots"></span><span class="price">59,00</span></div></div>
+              <div class="item"><div class="row"><span class="name">Peixe Branco</span><span class="dots"></span><span class="price">42,00</span></div></div>
+              <div class="item"><div class="row"><span class="name">Califórnia</span><span class="dots"></span><span class="price">45,00</span></div></div>
+              <div class="item"><div class="row"><span class="name">Polvo</span><span class="dots"></span><span class="price">47,90</span></div></div>
+              <div class="item"><div class="row"><span class="name">Camarão</span><span class="dots"></span><span class="price">69,00</span></div></div>
+              <div class="item"><div class="row"><span class="name">Salmão</span><span class="dots"></span><span class="price">59,90</span></div></div>
+              <div class="item"><div class="row"><span class="name">Ebiten</span><span class="dots"></span><span class="price">70,00</span></div></div>
+              <div class="item"><div class="row"><span class="name">Salmão Skin</span><span class="dots"></span><span class="price">47,90</span></div></div>
+              <div class="item"><div class="row"><span class="name">Filadélfia</span><span class="dots"></span><span class="price">45,00</span></div></div>
+              <div class="item"><div class="row"><span class="name">Shimeji</span><span class="dots"></span><span class="price">47,90</span></div></div>
+              <div class="item"><div class="row"><span class="name">Kani-Kama</span><span class="dots"></span><span class="price">45,00</span></div></div>
+            </div>
+          </div>
+          <div class="side"><img src="img/temaki.png" alt="Temakis de atum, peixe branco e salmão" loading="lazy"></div>
+        </div>
+
+        <!-- Maki -->
+        <div class="carte-panel" id="p-maki">
+          <div>
+            <h3 class="gold">Hossomaki &amp; Uramaki</h3>
+            <p class="ph">Enrolados clássicos e especiais da casa.</p>
+            <p class="sub-h">Hossomaki</p>
+            <div class="items">
+              <div class="item"><div class="row"><span class="name">Acelgamaki</span><span class="dots"></span><span class="price">79,90</span></div><div class="desc">Salmão grelhado com cebolinha e cream cheese enrolado na acelga e pitada de pimenta</div></div>
+              <div class="item"><div class="row"><span class="name">Hot Roll Especial</span><span class="dots"></span><span class="price">99,90</span></div><div class="desc">Sushi de salmão empanado, kani e cream cheese</div></div>
+              <div class="item"><div class="row"><span class="name">Kappamaki</span><span class="dots"></span><span class="price">89,00</span></div></div>
+              <div class="item"><div class="row"><span class="name">Kanimaki</span><span class="dots"></span><span class="price">89,00</span></div></div>
+              <div class="item"><div class="row"><span class="name">Salmonmaki</span><span class="dots"></span><span class="price">89,00</span></div></div>
+            </div>
+            <p class="sub-h">Uramaki</p>
+            <div class="items two">
+              <div class="item"><div class="row"><span class="name">Tekkamaki</span><span class="dots"></span><span class="price">79,90</span></div></div>
+              <div class="item"><div class="row"><span class="name">Uramaki Califórnia</span><span class="dots"></span><span class="price">79,90</span></div></div>
+              <div class="item"><div class="row"><span class="name">Uramaki Filadélfia</span><span class="dots"></span><span class="price">79,90</span></div></div>
+              <div class="item"><div class="row"><span class="name">Uramaki Salmão</span><span class="dots"></span><span class="price">89,90</span></div></div>
+              <div class="item"><div class="row"><span class="name">Uramaki Skin</span><span class="dots"></span><span class="price">79,90</span></div></div>
+            </div>
+          </div>
+          <div class="side"><img class="rounded" src="img/uramaki.jpg" alt="Uramakis" loading="lazy"></div>
+        </div>
+
+        <!-- Quentes -->
+        <div class="carte-panel" id="p-quentes">
+          <div>
+            <h3 class="gold">Pratos quentes</h3>
+            <p class="ph">Do empanado crocante ao tempurá leve.</p>
+            <div class="items two">
+              <div class="item"><div class="row"><span class="name">Batata frita</span><span class="dots"></span><span class="price">39,90</span></div></div>
+              <div class="item"><div class="row"><span class="name">Camarão com geleia de pimenta</span><span class="qty">8 und.</span><span class="dots"></span><span class="price">102,00</span></div></div>
+              <div class="item"><div class="row"><span class="name">Camarão Empanado</span><span class="dots"></span><span class="price">102,00</span></div></div>
+              <div class="item"><div class="row"><span class="name">Carne com batata</span><span class="dots"></span><span class="price">97,00</span></div></div>
+              <div class="item"><div class="row"><span class="name">Carne com brócolis</span><span class="dots"></span><span class="price">97,00</span></div></div>
+              <div class="item"><div class="row"><span class="name">Cebola recheada</span><span class="dots"></span><span class="price">89,00</span></div></div>
+              <div class="item"><div class="row"><span class="name">Chickenkatsu Frango</span><span class="dots"></span><span class="price">89,00</span></div></div>
+              <div class="item"><div class="row"><span class="name">Frango Xadrez</span><span class="dots"></span><span class="price">79,90</span></div></div>
+              <div class="item"><div class="row"><span class="name">Guioza</span><span class="qty">8 und.</span><span class="dots"></span><span class="price">60,00</span></div><div class="desc">Pastéis recheados com legumes e carne bovina</div></div>
+              <div class="item"><div class="row"><span class="name">Gyukatsu Carne</span><span class="dots"></span><span class="price">102,00</span></div></div>
+              <div class="item"><div class="row"><span class="name">Harumaki</span><span class="qty">8 und.</span><span class="dots"></span><span class="price">60,00</span></div><div class="desc">Rolinho primavera</div></div>
+              <div class="item"><div class="row"><span class="name">Lula à Dorê</span><span class="dots"></span><span class="price">72,00</span></div></div>
+              <div class="item"><div class="row"><span class="name">Shimeji</span><span class="dots"></span><span class="price">72,00</span></div><div class="desc">Cogumelos na manteiga</div></div>
+              <div class="item"><div class="row"><span class="name">Shimeji com Camarão</span><span class="dots"></span><span class="price">129,00</span></div></div>
+              <div class="item"><div class="row"><span class="name">Shimeji com Lula</span><span class="dots"></span><span class="price">119,00</span></div></div>
+              <div class="item"><div class="row"><span class="name">Shogayaki carne com gengibre</span><span class="dots"></span><span class="price">139,00</span></div></div>
+              <div class="item"><div class="row"><span class="name">Tempurá de camarão</span><span class="dots"></span><span class="price">129,00</span></div></div>
+              <div class="item"><div class="row"><span class="name">Tempurá de legumes</span><span class="dots"></span><span class="price">79,90</span></div></div>
+              <div class="item"><div class="row"><span class="name">Tempurá Misto</span><span class="dots"></span><span class="price">139,00</span></div></div>
+              <div class="item"><div class="row"><span class="name">Yakimeshi</span><span class="dots"></span><span class="price">139,00</span></div><div class="desc">Camarão, carne, frango ou misto</div></div>
+            </div>
+          </div>
+          <div class="side"><img src="img/pratos-quentes.png" alt="Pratos quentes" loading="lazy"></div>
+        </div>
+
+        <!-- Frios -->
+        <div class="carte-panel" id="p-frios">
+          <div>
+            <h3 class="gold">Pratos frios</h3>
+            <p class="ph">Entradas leves e refrescantes.</p>
+            <div class="items">
+              <div class="item"><div class="row"><span class="name">Carpaccio</span><span class="dots"></span><span class="price">72,00</span></div><div class="desc">Salmão, tilápia e peixe branco</div></div>
+              <div class="item"><div class="row"><span class="name">Casquinha de Siri</span><span class="dots"></span><span class="price">69,90</span></div></div>
+              <div class="item"><div class="row"><span class="name">Ceviche</span><span class="dots"></span><span class="price">89,00</span></div></div>
+              <div class="item"><div class="row"><span class="name">Croquete</span><span class="dots"></span><span class="price">60,00</span></div></div>
+              <div class="item"><div class="row"><span class="name">Poke de Salmão</span><span class="dots"></span><span class="price">119,90</span></div></div>
+              <div class="item"><div class="row"><span class="name">Polvo na chapa</span><span class="dots"></span><span class="price">89,90</span></div></div>
+            </div>
+          </div>
+          <div class="side"><img class="rounded" src="img/pratos/carpaccio.jpg" alt="Carpaccio" style="aspect-ratio:16/10" loading="lazy"><img class="rounded" src="img/pratos/ceviche.jpg" alt="Ceviche" style="aspect-ratio:16/10;margin-top:14px" loading="lazy"></div>
+        </div>
+
+        <!-- Yakissoba & Teppanyaki -->
+        <div class="carte-panel" id="p-yakissoba">
+          <div>
+            <h3 class="gold">Yakissoba</h3>
+            <div class="items two">
+              <div class="item"><div class="row"><span class="name">Camarão</span><span class="dots"></span><span class="price">96,00</span></div></div>
+              <div class="item"><div class="row"><span class="name">Frutos do mar</span><span class="dots"></span><span class="price">108,00</span></div></div>
+              <div class="item"><div class="row"><span class="name">Carne</span><span class="dots"></span><span class="price">96,00</span></div></div>
+              <div class="item"><div class="row"><span class="name">Misto</span><span class="dots"></span><span class="price">108,00</span></div></div>
+              <div class="item"><div class="row"><span class="name">Frango</span><span class="dots"></span><span class="price">80,00</span></div></div>
+              <div class="item"><div class="row"><span class="name">Vegetariano</span><span class="dots"></span><span class="price">108,00</span></div></div>
+            </div>
+            <h3 class="gold" style="margin-top:34px">Teppanyaki</h3>
+            <div class="items two">
+              <div class="item"><div class="row"><span class="name">Anchova</span><span class="dots"></span><span class="price">96,00</span></div></div>
+              <div class="item"><div class="row"><span class="name">Frutos do Mar</span><span class="dots"></span><span class="price">116,00</span></div></div>
+              <div class="item"><div class="row"><span class="name">Camarão</span><span class="dots"></span><span class="price">132,00</span></div></div>
+              <div class="item"><div class="row"><span class="name">Lula</span><span class="dots"></span><span class="price">102,00</span></div></div>
+              <div class="item"><div class="row"><span class="name">Contra Filé</span><span class="dots"></span><span class="price">108,00</span></div></div>
+              <div class="item"><div class="row"><span class="name">Picanha</span><span class="dots"></span><span class="price">132,00</span></div></div>
+              <div class="item"><div class="row"><span class="name">Filé de Frango</span><span class="dots"></span><span class="price">102,00</span></div></div>
+              <div class="item"><div class="row"><span class="name">Salmão</span><span class="dots"></span><span class="price">108,00</span></div></div>
+            </div>
+          </div>
+          <div class="side"><img src="img/yakissoba.png" alt="Yakissoba" loading="lazy"></div>
+        </div>
+
+        <!-- Burger & acompanhamentos -->
+        <div class="carte-panel" id="p-burger">
+          <div>
+            <h3 class="gold">Sushi Burger</h3>
+            <div class="items">
+              <div class="item"><div class="row"><span class="name">Hot burger Camarão</span><span class="dots"></span><span class="price">99,90</span></div></div>
+              <div class="item"><div class="row"><span class="name">Hot burger Philadelphia</span><span class="dots"></span><span class="price">89,90</span></div></div>
+              <div class="item"><div class="row"><span class="name">Hot burger Vegetariano</span><span class="dots"></span><span class="price">99,90</span></div></div>
+            </div>
+            <h3 class="gold" style="margin-top:34px">Acompanhamentos</h3>
+            <div class="items">
+              <div class="item"><div class="row"><span class="name">Gohan</span><span class="dots"></span><span class="price">40,00</span></div><div class="desc">Arroz branco japonês</div></div>
+              <div class="item"><div class="row"><span class="name">Missoshiro</span><span class="dots"></span><span class="price">79,90</span></div><div class="desc">Sopa à base de pasta de soja com macarrão lámen</div></div>
+            </div>
+          </div>
+          <div class="side"><img src="img/missoshiro.png" alt="Missoshiro" loading="lazy"></div>
+        </div>
+
+        <!-- Sobremesas -->
+        <div class="carte-panel" id="p-sobremesas">
+          <div>
+            <h3 class="gold">Sobremesas</h3>
+            <p class="ph">Para fechar com chave de ouro.</p>
+            <div class="items two">
+              <div class="item"><div class="row"><span class="name">Banana flambada</span><span class="dots"></span><span class="price">32,90</span></div></div>
+              <div class="item"><div class="row"><span class="name">Banana caramelizada</span><span class="dots"></span><span class="price">32,90</span></div></div>
+              <div class="item"><div class="row"><span class="name">Brownie na chapa</span><span class="dots"></span><span class="price">32,90</span></div></div>
+              <div class="item"><div class="row"><span class="name">Brownie tradicional</span><span class="dots"></span><span class="price">32,90</span></div></div>
+              <div class="item"><div class="row"><span class="name">Creme de mamão papaia</span><span class="dots"></span><span class="price">32,90</span></div></div>
+              <div class="item"><div class="row"><span class="name">Frutas flambadas</span><span class="dots"></span><span class="price">32,90</span></div></div>
+              <div class="item"><div class="row"><span class="name">Petit Gâteau</span><span class="dots"></span><span class="price">32,90</span></div></div>
+              <div class="item"><div class="row"><span class="name">Taça de Nutella</span><span class="dots"></span><span class="price">49,90</span></div></div>
+              <div class="item"><div class="row"><span class="name">Tempurá de Banana</span><span class="dots"></span><span class="price">32,90</span></div></div>
+              <div class="item"><div class="row"><span class="name">Tempurá de sorvete</span><span class="dots"></span><span class="price">32,90</span></div></div>
+            </div>
+          </div>
+          <div class="side"><img src="img/sobremesa.png" alt="Creme de mamão papaia" loading="lazy"></div>
+        </div>
+        <p class="menu-note" style="text-align:left">Valores em R$. Venda de bebidas alcoólicas proibida para menores de 18 anos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMBINADOS -->
+<section class="combos" id="combinados">
+  <div class="wrap" style="position:relative">
+    <div class="reveal">
+      <span class="eyebrow">Combinados</span>
+      <h2>Para dividir <span class="gold">(ou não)</span></h2>
+      <p class="lead">Combinados montados pelos nossos sushimen para 1 a 4 pessoas, e as barcas exclusivas Bendito Japa.</p>
+    </div>
+
+    <div class="combo-grid">
+      <div class="combo reveal"><span class="who">1 pessoa</span><h4>Combinado</h4><span class="pcs">18 peças</span><div class="val gold">R$ 135,00</div>
+        <ul><li>9 sashimis de salmão</li><li>3 sushis de salmão</li><li>2 uramakis</li><li>2 hossomakis</li><li>2 jhou's</li></ul></div>
+      <div class="combo reveal"><span class="who">2 pessoas</span><h4>Combinado</h4><span class="pcs">30 peças</span><div class="val gold">R$ 229,90</div>
+        <ul><li>12 sashimis de salmão</li><li>6 sushis de salmão</li><li>4 uramakis de salmão</li><li>4 hossomakis</li><li>4 jhou's</li></ul></div>
+      <div class="combo reveal"><span class="who">3 pessoas</span><h4>Combinado</h4><span class="pcs">42 peças</span><div class="val gold">R$ 339,90</div>
+        <ul><li>15 sashimis de salmão</li><li>9 sushis de salmão</li><li>6 uramakis</li><li>6 hossomakis</li><li>3 jhou's</li><li>3 baterás</li></ul></div>
+      <div class="combo reveal"><span class="who">4 pessoas</span><h4>Combinado</h4><span class="pcs">54 peças</span><div class="val gold">R$ 439,90</div>
+        <ul><li>20 sashimis de salmão</li><li>10 sushis de salmão</li><li>4 jhou's · 4 jhou's com ovas</li><li>4 baterás</li><li>4 niguiris trufados</li><li>4 hossomakis</li><li>4 uramakis de salmão</li></ul></div>
+    </div>
+
+    <div class="combo-sub reveal"><h3 class="gold">Combinados Bendito Japa</h3></div>
+    <div class="combo-grid three">
+      <div class="combo reveal"><span class="who">1 pessoa</span><h4>Bendito Japa</h4><span class="pcs">20 peças</span><div class="val gold">R$ 139,90</div>
+        <ul><li>10 sashimis de salmão, atum e prego</li><li>4 sushis de salmão, atum e prego</li><li>2 jhou's com ovas</li><li>4 niguiris trufados</li></ul></div>
+      <div class="combo reveal"><span class="who">2 pessoas</span><h4>Bendito Japa</h4><span class="pcs">30 peças</span><div class="val gold">R$ 239,90</div>
+        <ul><li>12 sashimis de salmão, atum e prego</li><li>4 uramakis</li><li>4 sushis de salmão, atum e prego</li><li>4 jhou's · 4 jhou's com ovas</li><li>2 baterás</li></ul></div>
+      <div class="combo reveal"><span class="who">3 pessoas</span><h4>Bendito Japa</h4><span class="pcs">42 peças</span><div class="val gold">R$ 389,90</div>
+        <ul><li>16 sashimis de salmão, atum, prego e polvo</li><li>12 sushis variados</li><li>4 jhou's com ovas</li><li>3 uramakis de salmão</li><li>4 hossomakis</li><li>3 uramakis ebiten</li></ul></div>
+      <div class="combo premium reveal"><div><span class="flag">70 PEÇAS</span><span class="who">Para a galera toda</span><h4>Bendito Japa Premium</h4><span class="pcs">A barca mais completa da casa</span><div class="val gold">R$ 578,00</div>
+        <ul><li>25 sashimis de salmão, atum, prego e polvo</li><li>4 sushis de salmão · 4 de prego · 4 de atum</li><li>4 sushis de polvo · 4 de camarão</li><li>4 sushis de salmão trufado</li><li>3 baterás</li><li>6 jhou's com ovas · 4 jhou's</li><li>4 uramakis de salmão</li><li>4 hossomakis</li></ul></div><div class="pimg"><img src="img/combinado.png" alt="Barca de sashimis e sushis" loading="lazy"></div></div>
+    </div>
+    <div class="hero-cta reveal" style="justify-content:center;margin-top:44px">
+      <a class="btn btn-gold" href="https://wa.me/5531993614146?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20pedir%20um%20combinado." target="_blank" rel="noopener">Pedir um combinado</a>
+      <a class="btn btn-line" href="https://www.ifood.com.br/busca?q=bendito%20japa" target="_blank" rel="noopener">Pedir no iFood</a>
+    </div>
+  </div>
+</section>
+
+<!-- AMBIENTE -->
+<section id="ambiente">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow both">Ambiente</span>
+      <h2>Tradição japonesa, <span class="gold">clima de celebração</span></h2>
+      <p class="lead">Um espaço pensado nos mínimos detalhes no Terraço Buritis, com jardim vertical, drinks autorais e atendimento que faz a gente querer voltar.</p>
+    </div>
+    <div class="gallery reveal">
+      <a class="t2" href="https://www.instagram.com/benditojapaburitis/" target="_blank" rel="noopener"><img src="img/ig06.jpg" alt="Amigas brindando no Bendito Japa" loading="lazy"></a>
+      <a href="https://www.instagram.com/benditojapaburitis/" target="_blank" rel="noopener"><img src="img/ig07.jpg" alt="Barca de sashimis" loading="lazy"></a>
+      <a class="t2" href="https://www.instagram.com/benditojapaburitis/" target="_blank" rel="noopener"><img src="img/ig04.jpg" alt="Drink autoral" loading="lazy"></a>
+      <a href="https://www.instagram.com/benditojapaburitis/" target="_blank" rel="noopener"><img src="img/ig11.jpg" alt="Pai e filho no rodízio" loading="lazy" style="object-position:center 70%"></a>
+      <a href="https://www.instagram.com/benditojapaburitis/" target="_blank" rel="noopener"><img src="img/ig05.jpg" alt="Cliente no salão" loading="lazy"></a>
+      <a href="https://www.instagram.com/benditojapaburitis/" target="_blank" rel="noopener"><img src="img/ig09.jpg" alt="Drink verde no jardim" loading="lazy"></a>
+    </div>
+    <div class="quotes reveal">
+      <div class="quote"><span class="stars">★★★★★</span><p>“A comida é deliciosa, muito capricho e o preço é justo, vale muito a pena!”</p><small>Avaliação no Google</small></div>
+      <div class="quote"><span class="stars">★★★★★</span><p>“Amamos a experiência, muitas variedades, ótimos pratos e ótimos drinks.”</p><small>Avaliação no Google</small></div>
+      <div class="quote"><span class="stars">★★★★★</span><p>“Ambiente acolhedor, gostoso, comida saborosa, peças frescas e atendimento impecável.”</p><small>Avaliação no Google</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- OCASIÕES -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="occ-grid">
+      <a class="occ reveal" href="https://wa.me/5531993614146?text=Ol%C3%A1!%20Vou%20comemorar%20meu%20anivers%C3%A1rio%20e%20gostaria%20de%20reservar%20uma%20mesa." target="_blank" rel="noopener">
+        <img src="img/ig01.jpg" alt="" loading="lazy" style="object-position:center 25%">
+        <div class="body"><h3>Aniversariante</h3><p>Vai comemorar? Reserve sua mesa e celebre com a gente.</p><span class="lnk">Reservar para aniversário →</span></div>
+      </a>
+      <a class="occ reveal" href="https://wa.me/5531993614146?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20para%20um%20evento%20da%20minha%20empresa." target="_blank" rel="noopener">
+        <img src="img/ig08.jpg" alt="" loading="lazy" style="object-position:center 20%">
+        <div class="body"><h3>Empresas</h3><p>Confraternizações e almoços corporativos para sua equipe.</p><span class="lnk">Falar com a equipe →</span></div>
+      </a>
+      <a class="occ reveal" href="https://www.ifood.com.br/busca?q=bendito%20japa" target="_blank" rel="noopener">
+        <img src="img/jou.jpg" alt="" loading="lazy">
+        <div class="body"><h3>Delivery</h3><p>O Bendito Japa na sua casa, pelo iFood.</p><span class="lnk">Pedir no iFood →</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato" style="background:var(--bg-2)">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">Onde estamos</span>
+      <h2>Te esperamos no <span class="gold">Terraço Buritis</span></h2>
+    </div>
+    <div class="contact-grid">
+      <div class="info reveal">
+        <a class="it" href="https://www.google.com/maps/dir/?api=1&destination=Bendito+Japa+Buritis+Av.+Professor+M%C3%A1rio+Werneck+1550+Belo+Horizonte" target="_blank" rel="noopener">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+          <div><b>Av. Professor Mário Werneck, 1550 — Loja 04</b><span>Terraço Buritis · Buritis, Belo Horizonte/MG · 30455-610</span></div>
+        </a>
+        <a class="it" href="https://wa.me/5531993614146" target="_blank" rel="noopener">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.5 12.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5 2.5 1 3 .8 3.6.8.6-.1 1.8-.7 2-1.5.3-.7.3-1.3.2-1.5-.1-.1-.3-.2-.6-.3z"/></svg></span>
+          <div><b>(31) 99361-4146</b><span>Reservas pelo WhatsApp</span></div>
+        </a>
+        <a class="it" href="tel:+553135687701">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span>
+          <div><b>(31) 3568-7701</b><span>Telefone fixo</span></div>
+        </a>
+        <div class="it">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+          <div><b>Horário de funcionamento</b>
+            <dl class="hours"><dt>Seg a sex</dt><dd>11h30 às 15h · 18h30 às 23h</dd><dt>Sáb, dom e feriados</dt><dd>12h às 23h</dd></dl>
+          </div>
+        </div>
+        <a class="it" href="https://www.instagram.com/benditojapaburitis/" target="_blank" rel="noopener">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></span>
+          <div><b>@benditojapaburitis</b><span>Mais de 21 mil seguidores</span></div>
+        </a>
+        <div class="other"><b>Também em Lourdes:</b> Av. Olegário Maciel, 1801 · (31) 3141-2444 · <a href="https://www.instagram.com/benditojapaoficial/" target="_blank" rel="noopener" style="color:var(--gold-2)">@benditojapaoficial</a></div>
+      </div>
+      <div class="map reveal">
+        <iframe title="Mapa Bendito Japa Buritis" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Bendito+Japa+Buritis,+Av.+Professor+M%C3%A1rio+Werneck,+1550+-+Buritis,+Belo+Horizonte+-+MG&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="final">
+  <div class="wrap reveal">
+    <img class="logo" src="img/logo.png" alt="Bendito Japa">
+    <h2>Sua mesa está <span class="script gold">esperando.</span></h2>
+    <p class="lead" style="margin:10px auto 0">Reserve agora pelo WhatsApp e venha descobrir por que somos o queridinho de BH.</p>
+    <div class="hero-cta">
+      <a class="btn btn-gold" href="https://wa.me/5531993614146?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20reservar%20uma%20mesa%20no%20Bendito%20Japa%20Buritis." target="_blank" rel="noopener">Reservar pelo WhatsApp</a>
+      <a class="btn btn-line" href="#cardapio">Ver cardápio</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <img src="img/logo-redondo.png" alt="Bendito Japa">
+      <p>Av. Prof. Mário Werneck, 1550, Loja 04 — Buritis, Belo Horizonte/MG<br>© <span id="y"></span> Bendito Japa Buritis. Beba com moderação.</p>
+      <div class="socials">
+        <a href="https://www.instagram.com/benditojapaburitis/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg></a>
+        <a href="https://www.facebook.com/benditojapaoficial/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H8v4h2v8h4v-8h3l1-4h-4V8z"/></svg></a>
+        <a href="https://wa.me/5531993614146" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg></a>
+      </div>
+    </div>
+    <div class="credit">Desenvolvido por <a href="https://mesquitasaas.online/" target="_blank" rel="noopener"><b>Mesquita SaaS</b></a></div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5531993614146?text=Ol%C3%A1!%20Vim%20pelo%20site%20do%20Bendito%20Japa%20Buritis." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.5 12.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5 2.5 1 3 .8 3.6.8.6-.1 1.8-.7 2-1.5.3-.7.3-1.3.2-1.5-.1-.1-.3-.2-.6-.3z"/></svg>
+</a>
+<button class="to-top" id="toTop" aria-label="Voltar ao topo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+
+<script>
+  // Cardápio do rodízio (fotos do cardápio oficial)
+  const DISHES = {
+    'Entradas': [
+      ['entrada-cortesia','Entrada de cortesia','Peixe prego, tilápia e salmão'],
+      ['atum-selado','Atum Selado',''],
+      ['canape-salmao','Canapé de Salmão',''],
+      ['carpaccio','Carpaccios Especiais do Chef','Salmão, salmão trufado, peixe prego e tilápia'],
+      ['ceviche','Ceviche',''],
+      ['haddock','Haddock',''],
+      ['sunomono','Sunomono',''],
+      ['casquinha-siri','Casquinha de Siri',''],
+      ['croquete','Croquete','']
+    ],
+    'Sushis & Rolls': [
+      ['sushi','Sushi','Atum, camarão, peixe branco, polvo, salmão e skin'],
+      ['uramaki','Uramaki','Califórnia, Filadélfia, salmão, skin e salmão grelhado'],
+      ['hossomaki','Hossomaki','Tekkamaki, kappamaki, kanimaki, shakemaki e salmonmaki'],
+      ['hot-roll','Hot Roll','Alho-poró, couve, Doritos, salmão, cream cheese, cebolinha e batata-doce'],
+      ['temaki','Temaki','Atum, salmão, skin, Califórnia, Filadélfia e peixe branco'],
+      ['jou','Jou','Salmão, ovas de massago, massago black, camarão, shimeji, cream cheese, eby, ebiten e geleias de pimenta, maracujá ou goiabada']
+    ],
+    'Sashimis & Especiais': [
+      ['sashimi','Sashimi','Atum, peixe branco, salmão, polvo e tilápia'],
+      ['salmao-black','Salmão Black',''],
+      ['salmao-pedra-sal','Salmão na Pedra de Sal',''],
+      ['tartar','Tartar','']
+    ],
+    'Pratos quentes': [
+      ['camarao','Camarão','Crispy, empanado e na chapa'],
+      ['teppan','Teppan','Contrafilé, salmão, anchova e camarão'],
+      ['yakissoba','Yakissoba','Carne, frango, legumes e misto'],
+      ['guioza','Guioza','No vapor e frita'],
+      ['chicken-katsu','Chicken Katsu','Frango à milanesa'],
+      ['frango-xadrez','Frango Xadrez',''],
+      ['cebola-recheada','Cebola Recheada',''],
+      ['lula-dore','Lula à Dorê',''],
+      ['lula-chapa','Lula Frita na Chapa',''],
+      ['shimeji','Shimeji na Manteiga',''],
+      ['tempura-legumes','Tempurá de Legumes',''],
+      ['trouxinha-camarao','Trouxinha de Camarão',''],
+      ['rolinho-primavera','Rolinho Primavera','Queijo, legumes e napolitano'],
+      ['missoshiro','Missoshiro',''],
+      ['gohan','Gohan','']
+    ],
+    'Doces': [
+      ['hot-doce','Hot Doce','Banana com doce de leite, chocolate, morango e goiabada'],
+      ['rolinho-doce','Rolinho Primavera Doce','Doce de leite, chocolate e romeu e julieta']
+    ]
+  };
+  const tabsEl = document.getElementById('dishTabs'), grid = document.getElementById('dishGrid');
+  const cats = ['Todos', ...Object.keys(DISHES)];
+  const render = cat => {
+    const list = cat === 'Todos' ? Object.values(DISHES).flat() : DISHES[cat];
+    grid.innerHTML = list.map(([img, name, desc], i) =>
+      `<article class="dish" style="animation-delay:${Math.min(i, 12) * 40}ms"><figure><img src="img/pratos/${img}.jpg" alt="${name}" loading="lazy"></figure><div class="body"><h4>${name}</h4>${desc ? `<p>${desc}</p>` : ''}</div></article>`).join('');
+    tabsEl.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.cat === cat));
+  };
+  tabsEl.innerHTML = cats.map(c => `<button class="tab" role="tab" data-cat="${c}">${c}</button>`).join('');
+  tabsEl.addEventListener('click', e => { const t = e.target.closest('.tab'); if (t) render(t.dataset.cat); });
+  render('Entradas');
+
+  // À la carte
+  const carteNav = document.getElementById('carteNav');
+  carteNav.addEventListener('click', e => {
+    const b = e.target.closest('button'); if (!b) return;
+    carteNav.querySelectorAll('button').forEach(x => x.classList.toggle('active', x === b));
+    document.querySelectorAll('.carte-panel').forEach(p => p.classList.toggle('active', p.id === 'p-' + b.dataset.p));
+    b.scrollIntoView({block:'nearest', inline:'center', behavior:'smooth'});
+  });
+
+  // Header, menu, topo, reveal
+  document.getElementById('y').textContent = new Date().getFullYear();
+  const header = document.querySelector('header'), toTop = document.getElementById('toTop');
+  const onScroll = () => { header.classList.toggle('scrolled', scrollY > 30); toTop.classList.toggle('show', scrollY > 600); };
+  addEventListener('scroll', onScroll, {passive:true}); onScroll();
+  toTop.addEventListener('click', () => scrollTo({top:0, behavior:'smooth'}));
+  const menu = document.getElementById('menu');
+  const burger = document.getElementById('burger');
+  const setMenu = open => { menu.classList.toggle('open', open); burger.classList.toggle('open', open); burger.setAttribute('aria-expanded', open); burger.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu'); header.classList.toggle('menu-on', open); };
+  burger.addEventListener('click', () => setMenu(!menu.classList.contains('open')));
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setMenu(false)));
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') setMenu(false); });
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), {threshold:.1});
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
